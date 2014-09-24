@@ -2,8 +2,8 @@
 Tools = function() {};
 Tools.prototype = {
 /**
-Find the first element of *iterable* that leads to minimal value in respect to the function *callback*
-Return dict with keys element, value and index.
+Find the first element of *iterable* that leads to a minimal value in respect to the function *callback*
+Return dictionary with keys element, value and index.
 Example: tools.findMin([0,1,-1,-5,-5,-5,-5], function(x) {return -x*x})
 Result: { element: -5, value: -25, index: 3 }
 **/
@@ -28,8 +28,8 @@ findMin : function (iterable, callback) {
 },
 
 /**
-Find the first element of *iterable* that leads to minimal value in respect to the function *callback*
-Return dict with keys element, value and index.
+Find the first element of *iterable* that leads to a maximal value in respect to the function *callback*
+Return dictionary with keys element, value and index.
 Example: tools.findMax([0,1,-1,-5,-5,-5,-5], function(x) {return x*x})
 Result: { element: -5, value: 25, index: 3 }
 **/
